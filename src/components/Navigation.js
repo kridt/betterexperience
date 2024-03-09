@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Navigation() {
   return (
@@ -25,21 +25,38 @@ export default function Navigation() {
         />
       </div>
       <nav style={{ gridArea: "2/1/3/3", zIndex: "99" }}>
+        <h1
+          style={{
+            textAlign: "center",
+            color: "white",
+            textShadow: "2px 2px 4px #000000",
+            fontSize: "3rem",
+            textDecoration: "underline",
+          }}
+        >
+          Better Experience
+        </h1>
         <ul
           style={{
             display: "flex",
-            justifyContent: "space-around",
+            justifyContent: "center",
             listStyle: "none",
           }}
         >
           <li>
-            <Link to="/">Startside</Link>
+            <NavLink className={"navLink"} to="/">
+              Startside
+            </NavLink>
           </li>
           <li>
-            <Link to="/starter-pakke">Starter Pakke</Link>
+            <NavLink className={"navLink"} to="/starter-pakke">
+              Starter Pakke
+            </NavLink>
           </li>
           <li>
-            <Link to="/trading">Trading</Link>
+            <NavLink className={"navLink"} to="/trading">
+              Trading
+            </NavLink>
           </li>
         </ul>
       </nav>

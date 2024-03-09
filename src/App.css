@@ -1,16 +1,27 @@
 .App {
-  text-align: center;
+  background-color: #3c3e42;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navLink {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  background-color: lightgray;
+  padding: 5px 10px;
+  border-radius: 8px;
+  box-shadow: 10px 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navLink:hover {
+  background-color: #3d757b;
+  color: turquoise;
+  transition: 0.4s;
+}
+
+.active {
+  background-color: darkcyan;
+  color: turquoise;
 }
 
 .App-header {
@@ -28,11 +39,44 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.CustomTab {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: white;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: bold;
+  background-color: transparent;
+  width: 100%;
+  line-height: 1.5;
+  padding: 8px 12px;
+  margin: 6px;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.CustomTab:hover {
+  background-color: cyan;
+}
+
+.CustomTab:focus {
+  color: #fff;
+  outline: 3px solid cyan;
+}
+
+.CustomTab.tabClasses.selected {
+  background-color: #fff;
+  color: cyan;
+}
+
+.CustomTab.buttonClasses.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.CustomTabPanel {
+  width: 100%;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 0.875rem;
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import Navigation from "../components/Navigation";
+import { Link } from "react-router-dom";
 
 export default function LandingPage() {
   return (
@@ -67,44 +68,55 @@ export default function LandingPage() {
               }}
             >
               <div>
-                <img
-                  style={{
-                    width: "50px",
-                    height: "50px",
-                  }}
-                  src="./insta.png"
-                  alt="facebook"
-                />
+                <Link
+                  target="_blank"
+                  to="https://www.instagram.com/wearebeofficial_"
+                >
+                  <img
+                    style={{
+                      width: "50px",
+                      height: "50px",
+                    }}
+                    src="./insta.png"
+                    alt="facebook"
+                  />
+                </Link>
               </div>
               <div>
-                <img
-                  style={{
-                    width: "50px",
-                    height: "50px",
-                  }}
-                  src="./discord.webp"
-                  alt="facebook"
-                />
+                <Link target="_blank" to="https://discord.gg/ZD8VxBPpvA">
+                  <img
+                    style={{
+                      width: "50px",
+                      height: "50px",
+                    }}
+                    src="./discord.webp"
+                    alt="discord"
+                  />
+                </Link>
               </div>
               <div>
-                <img
-                  style={{
-                    width: "50px",
-                    height: "50px",
-                  }}
-                  src="./n23.webp"
-                  alt="facebook"
-                />
+                <Link target="_blank" to="https://network23.team/">
+                  <img
+                    style={{
+                      width: "50px",
+                      height: "50px",
+                    }}
+                    src="./n23.webp"
+                    alt="n23"
+                  />
+                </Link>
               </div>
               <div>
-                <img
-                  style={{
-                    width: "50px",
-                    height: "50px",
-                  }}
-                  src="./be.png"
-                  alt="facebook"
-                />
+                <Link target="_blank" to="https://be.club">
+                  <img
+                    style={{
+                      width: "50px",
+                      height: "50px",
+                    }}
+                    src="./be.png"
+                    alt="be"
+                  />
+                </Link>
               </div>
             </div>
           </div>
